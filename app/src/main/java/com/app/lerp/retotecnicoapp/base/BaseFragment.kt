@@ -5,7 +5,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.util.Log
 import androidx.fragment.app.Fragment
-import com.app.lerp.retotecnicoapp.ui.ProgressDialog
+import com.app.lerp.retotecnicoapp.ui.dialog.ProgressDialog
 
 abstract class BaseFragment : Fragment() {
 

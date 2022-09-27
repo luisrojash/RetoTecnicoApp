@@ -1,4 +1,4 @@
-package com.app.lerp.retotecnicoapp.ui
+package com.app.lerp.retotecnicoapp.ui.dialog
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable

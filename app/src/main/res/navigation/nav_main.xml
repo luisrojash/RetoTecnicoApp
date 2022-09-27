@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/listPostFragment"
-        android:name="com.app.lerp.retotecnicoapp.ui.fragment.ListPostFragment"
+        android:name="com.app.lerp.retotecnicoapp.ui.fragment.PostFragment"
         android:label="ListPostFragment"
         tools:layout="@layout/fragment_list_post">
     </fragment>

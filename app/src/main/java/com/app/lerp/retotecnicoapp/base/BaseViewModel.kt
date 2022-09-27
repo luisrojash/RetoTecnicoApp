@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModel
 abstract class BaseViewModel : ViewModel() {
 
 
-    fun hasInternet(context: Context): Boolean {
+    fun isConecct(context: Context): Boolean {
         val connectivityManager =
             context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val capabilities =

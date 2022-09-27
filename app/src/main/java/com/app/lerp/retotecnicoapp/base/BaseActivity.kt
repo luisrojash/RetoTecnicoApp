@@ -16,7 +16,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.app.lerp.retotecnicoapp.ui.ProgressDialog
+import com.app.lerp.retotecnicoapp.ui.dialog.ProgressDialog
 import com.google.android.material.snackbar.Snackbar
 
 

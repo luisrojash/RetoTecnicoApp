@@ -5,15 +5,16 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.lerp.entity.PostEntity
 import com.app.lerp.retotecnicoapp.databinding.ItemListPostBinding
-import com.app.lerp.retotecnicoapp.ui.fragment.holder.ListPostHolder
+import com.app.lerp.retotecnicoapp.ui.fragment.holder.PostHolder
 
-class ListPostAdapter(
+class PostAdapter(
+    private var onClickPost: (route: PostEntity) -> Unit,
     private var items: List<PostEntity>,
-) : RecyclerView.Adapter<ListPostHolder>() {
+) : RecyclerView.Adapter<PostHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListPostHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostHolder {
 
-        return ListPostHolder(
+        return PostHolder(
             ItemListPostBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
@@ -22,9 +23,9 @@ class ListPostAdapter(
         )
     }
 
-    override fun onBindViewHolder(holder: ListPostHolder, position: Int) {
+    override fun onBindViewHolder(holder: PostHolder, position: Int) {
         val postList = items[position]
-        holder.bind(postList)
+        holder.bind(postList,onClickPost)
     }
 
     override fun getItemCount(): Int {

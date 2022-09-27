@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import com.app.lerp.retotecnicoapp.base.BaseActivity
 import com.app.lerp.retotecnicoapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity() {
+
 
     private lateinit var binding : ActivityMainBinding
 
