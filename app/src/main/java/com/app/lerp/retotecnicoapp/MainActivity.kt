@@ -1,11 +1,27 @@
 package com.app.lerp.retotecnicoapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import com.app.lerp.retotecnicoapp.base.BaseActivity
+import com.app.lerp.retotecnicoapp.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity() {
+
+    private lateinit var binding : ActivityMainBinding
+
+    override fun startCreateViewBinding(savedInstanceState: Bundle?) {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
+
+    override fun getDataActivityForResult(data: Intent?) {
+
+    }
+
+    override fun initView() {
+    }
+
+    override fun initViewModel() {
+    }
+
 }
