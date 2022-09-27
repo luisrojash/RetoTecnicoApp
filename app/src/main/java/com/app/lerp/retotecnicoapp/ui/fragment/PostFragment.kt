@@ -5,14 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.lerp.entity.PostEntity
 import com.app.lerp.retotecnicoapp.MainViewModel
 import com.app.lerp.retotecnicoapp.base.BaseFragment
 import com.app.lerp.retotecnicoapp.databinding.FragmentListPostBinding
 import com.app.lerp.retotecnicoapp.ui.fragment.adapter.PostAdapter
+import com.app.lerp.retotecnicoapp.ui.fragment.event.PostEventResult
 import dagger.hilt.android.AndroidEntryPoint
-import androidx.navigation.fragment.findNavController
 
 @AndroidEntryPoint
 class PostFragment : BaseFragment() {
@@ -70,7 +71,8 @@ class PostFragment : BaseFragment() {
     }
 
     private fun initStartCommentFragment(itEntity: PostEntity) {
-       // findNavController().navigate(PlaceListFragmentDirections.actionPlaceListFragmentToPlaceDetailFragment())
+        val action = PostFragmentDirections.actionListPostFragmentToCommentsFragment(itEntity)
+        findNavController().navigate(action)
     }
 
 

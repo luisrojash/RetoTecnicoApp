@@ -1,4 +1,4 @@
-package com.app.lerp.retotecnicoapp.ui.fragment
+package com.app.lerp.retotecnicoapp.ui.fragment.event
 
 import com.app.lerp.entity.PostEntity
 

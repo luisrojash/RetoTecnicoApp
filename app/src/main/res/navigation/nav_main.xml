@@ -11,7 +11,26 @@
         android:name="com.app.lerp.retotecnicoapp.ui.fragment.PostFragment"
         android:label="ListPostFragment"
         tools:layout="@layout/fragment_list_post">
+        <action
+            android:id="@+id/action_listPostFragment_to_commentsFragment"
+            app:destination="@id/commentsFragment" >
+            <argument
+                android:name="postEntity"
+                app:argType="com.app.lerp.entity.PostEntity" />
+        </action>
+
     </fragment>
 
+
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="com.app.lerp.retotecnicoapp.ui.fragment.CommentsFragment"
+        android:label="CommentsFragment"
+        tools:layout="@layout/fragment_list_post">
+
+        <argument
+            android:name="postEntity"
+            app:argType="com.app.lerp.entity.PostEntity" />
+    </fragment>
 
 </navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_8">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewId"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:text="Aqui ira el Ud"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:text="Aqui ira el Name"
+            app:layout_constraintEnd_toEndOf="@+id/textViewId"
+            app:layout_constraintStart_toStartOf="@+id/textViewId"
+            app:layout_constraintTop_toBottomOf="@+id/textViewId" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewBody"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:text="Aqui ira el Name"
+            app:layout_constraintEnd_toEndOf="@+id/textViewId"
+            app:layout_constraintStart_toStartOf="@+id/textViewId"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

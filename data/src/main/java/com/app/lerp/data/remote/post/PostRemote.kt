@@ -13,4 +13,6 @@ class PostRemote(private val api: PostApi) : RemotePostRepository {
             this.map { it.toEntity() }
         }
     }
+
+
 }
